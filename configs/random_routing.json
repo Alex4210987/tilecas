@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "record_kind": "conditional_routing_calibration",
+  "source_table": "04_Rollback_traces/random_calibration_by_configuration.csv",
+  "paper_scope": "Section 4.5: conditional transition frequencies per accelerator-model configuration",
+  "historical_execution_verified": false,
+  "wall_seconds": 7200,
+  "configurations": {
+    "AMD / Astra": {
+      "high_decision_boundaries": 2246,
+      "low_decision_boundaries": 2168,
+      "lower_total": 316,
+      "rollback_total": 133
+    },
+    "AMD / DeepSeek Flash": {
+      "high_decision_boundaries": 2187,
+      "low_decision_boundaries": 2304,
+      "lower_total": 311,
+      "rollback_total": 138
+    },
+    "Ascend / Astra": {
+      "high_decision_boundaries": 2288,
+      "low_decision_boundaries": 2408,
+      "lower_total": 332,
+      "rollback_total": 150
+    },
+    "Ascend / DeepSeek Flash": {
+      "high_decision_boundaries": 2105,
+      "low_decision_boundaries": 2304,
+      "lower_total": 296,
+      "rollback_total": 119
+    }
+  },
+  "pooled_counts": {
+    "high_decision_boundaries": 8826,
+    "low_decision_boundaries": 9184,
+    "lower_total": 1255,
+    "rollback_total": 540
+  },
+  "pooled_p_lower": 0.1421935191479719,
+  "pooled_p_rollback": 0.05879790940766551
+}

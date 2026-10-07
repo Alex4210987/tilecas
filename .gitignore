@@ -1,0 +1,37 @@
+# Experiment outputs and private agent state
+/runs/
+/work/
+/outputs/
+/preflight/
+/results/
+/data/
+/artifacts/
+**/trajectory/
+**/sessions/
+**/.harness/
+**/.codex/
+.env
+.env.*
+!.env.example
+auth.json
+oauth-token
+*.pem
+*.key
+
+# Local builds and environments
+__pycache__/
+*.py[cod]
+*.so
+*.o
+*.a
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.cache/
+.DS_Store
+*.log
+
+# External KDA checkout is supplied separately.
+/thirdparty/kda-upstream/

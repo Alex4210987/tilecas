@@ -1,0 +1,78 @@
+{
+  "links_checked_on": "2026-10-06",
+  "items": [
+    {
+      "dependency": "KernelBench",
+      "url": "https://github.com/ScalingIntelligence/KernelBench",
+      "path": "thirdparty/KernelBench",
+      "status": "bundled Level-3 workload references, Ascend adapter support, manifests and license"
+    },
+    {
+      "dependency": "AKO4ALL",
+      "url": "https://github.com/TongmingLAIC/AKO4ALL",
+      "path": "thirdparty/AKO4ALL",
+      "status": "bundled policy, template and benchmark support; illustration assets omitted"
+    },
+    {
+      "dependency": "KDA",
+      "url": "https://github.com/NVlabs/kda/tree/ef6ce617693ef0782b3ecb9f37e39bbf10226a90",
+      "path": "KDA_REFERENCE.md",
+      "status": "External pinned upstream workflow; local dedicated launcher and integration included",
+      "revision": "ef6ce617693ef0782b3ecb9f37e39bbf10226a90",
+      "historical_experiment_version_verified": false,
+      "invocation": "scripts/submit_kda_pair.py",
+      "source_directory_environment": "KDA_SOURCE_DIR",
+      "current_task_catalog": "configs/kda_cohort.json",
+      "current_task_count": 50,
+      "current_validation": "50 tasks x 2 platforms x 2 prompt variants; source/reference parsing and prompt rendering only"
+    },
+    {
+      "dependency": "TileLang",
+      "url": "https://github.com/tile-ai/tilelang",
+      "path": "installed Python environment",
+      "status": "external compiler/runtime dependency"
+    },
+    {
+      "dependency": "TileLang-Ascend",
+      "url": "https://github.com/tile-ai/tilelang-ascend",
+      "path": "installed Python environment",
+      "status": "external Ascend compiler adapter"
+    },
+    {
+      "dependency": "torch_npu",
+      "url": "https://github.com/Ascend/pytorch",
+      "path": "installed Python environment",
+      "status": "external Ascend PyTorch adapter"
+    },
+    {
+      "dependency": "PyTorch",
+      "url": "https://pytorch.org/get-started/locally/",
+      "path": "installed Python environment",
+      "status": "external platform-specific framework build"
+    },
+    {
+      "dependency": "CANN and Ascend C",
+      "url": "https://www.hiascend.com/developer/download/community/result?module=cann",
+      "path": "accelerator host CANN installation",
+      "status": "external toolkit, compiler, profiler and drivers"
+    },
+    {
+      "dependency": "ROCm",
+      "url": "https://rocm.docs.amd.com/en/latest/",
+      "path": "accelerator host ROCm installation",
+      "status": "external toolkit and drivers"
+    },
+    {
+      "dependency": "HIP",
+      "url": "https://rocm.docs.amd.com/projects/HIP/en/latest/",
+      "path": "ROCm include/compiler paths",
+      "status": "external native-language documentation and implementation"
+    },
+    {
+      "dependency": "ROCprofiler-SDK",
+      "url": "https://rocm.docs.amd.com/projects/rocprofiler-sdk/en/latest/",
+      "path": "accelerator host profiler installation",
+      "status": "external optional diagnostic profiler"
+    }
+  ]
+}

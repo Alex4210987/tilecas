@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use TileCas, please cite the accompanying manuscript."
+type: software
+title: "TileCas: Cascading Kernel Development Across Programming Abstractions"
+authors:
+  - family-names: Xiao
+    given-names: Xinyu
+    affiliation: Fudan University
+    email: xinyuxiao2024@gmail.com
+  - family-names: Song
+    given-names: Zihe
+    affiliation: University of Texas at Dallas
+    email: zihe.song@utdallas.edu
+  - family-names: Yang
+    given-names: Wei
+    affiliation: Fudan University
+    email: yang_wei@fudan.edu.cn
+  - family-names: Xie
+    given-names: Tao
+    affiliation: Peking University / Fudan University
+    email: taoxie@pku.edu.cn
+repository-code: "https://github.com/Alex4210987/tilecas"
+license: MIT
+keywords:
+  - accelerator kernels
+  - coding agents
+  - programming abstractions
+  - TileLang
+  - Ascend
+  - ROCm

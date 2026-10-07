@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "scope": "KDA and KDA+TileCas task configuration",
+  "task_count": 50,
+  "platforms": [
+    "ascend",
+    "rocm"
+  ],
+  "models": [
+    "gpt-6-astra",
+    "deepseek-flash"
+  ],
+  "agent_seed_labels": [
+    101,
+    211,
+    307,
+    401,
+    503
+  ],
+  "seed_scope": "Cohort labels; each submission opens a fresh conversation. Model backend seed control must be recorded by the executor.",
+  "input_distribution": "N(0,1)",
+  "warmup_executions": 3,
+  "timed_executions": 5,
+  "budget_seconds": 7200,
+  "endpoint_selection": "best_reported",
+  "tasks": [
+    {
+      "task": "level3/1_MLP",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/1_MLP.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/2_ShallowWideMLP",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/2_ShallowWideMLP.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/3_DeepNarrowMLP",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/3_DeepNarrowMLP.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/4_LeNet5",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/4_LeNet5.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/5_AlexNet",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/5_AlexNet.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/6_GoogleNetInceptionModule",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/6_GoogleNetInceptionModule.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/7_GoogleNetInceptionV1",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/7_GoogleNetInceptionV1.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/8_ResNetBasicBlock",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/8_ResNetBasicBlock.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/9_ResNet18",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/9_ResNet18.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/10_ResNet101",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/10_ResNet101.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/11_VGG16",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/11_VGG16.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/12_VGG19",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/12_VGG19.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/13_DenseNet121TransitionLayer",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/13_DenseNet121TransitionLayer.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/14_DenseNet121DenseBlock",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/14_DenseNet121DenseBlock.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/15_DenseNet121",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/15_DenseNet121.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/16_DenseNet201",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/16_DenseNet201.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/17_SqueezeNetFireModule",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/17_SqueezeNetFireModule.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/18_SqueezeNet",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/18_SqueezeNet.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/19_MobileNetV1",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/19_MobileNetV1.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/20_MobileNetV2",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/20_MobileNetV2.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/21_EfficientNetMBConv",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/21_EfficientNetMBConv.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/22_EfficientNetB0",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/22_EfficientNetB0.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/23_EfficientNetB1",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/23_EfficientNetB1.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/24_EfficientNetB2",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/24_EfficientNetB2.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/25_ShuffleNetUnit",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/25_ShuffleNetUnit.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/26_ShuffleNet",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/26_ShuffleNet.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/27_RegNet",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/27_RegNet.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/28_VisionTransformer",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/28_VisionTransformer.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/29_SwinMLP",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/29_SwinMLP.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/30_SwinTransformerV2",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/30_SwinTransformerV2.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/31_VisionAttention",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/31_VisionAttention.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/32_ConvolutionalVisionTransformer",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/32_ConvolutionalVisionTransformer.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/33_VanillaRNN",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/33_VanillaRNN.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/34_VanillaRNNHidden",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/34_VanillaRNNHidden.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/35_LSTM",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/35_LSTM.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/36_LSTMHn",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/36_LSTMHn.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/37_LSTMCn",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/37_LSTMCn.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/38_LSTMBidirectional",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/38_LSTMBidirectional.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/39_GRU",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/39_GRU.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/40_GRUHidden",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/40_GRUHidden.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/41_GRUBidirectional",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/41_GRUBidirectional.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/42_GRUBidirectionalHidden",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/42_GRUBidirectionalHidden.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/43_MinGPTCausalAttention",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/43_MinGPTCausalAttention.py",
+      "reference_overrides": {
+        "rocm": "configs/kda-mingpt-original/reference.py",
+        "ascend": "configs/kda-mingpt-original/reference.py"
+      }
+    },
+    {
+      "task": "level3/44_MiniGPTBlock",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/44_MiniGPTBlock.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/45_UNetSoftmax",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/45_UNetSoftmax.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/46_NetVladWithGhostClusters",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/46_NetVladWithGhostClusters.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/47_NetVladNoGhostClusters",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/47_NetVladNoGhostClusters.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/48_Mamba2ReturnY",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/48_Mamba2ReturnY.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/49_Mamba2ReturnFinalState",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/49_Mamba2ReturnFinalState.py",
+      "reference_overrides": {}
+    },
+    {
+      "task": "level3/50_ReLUSelfAttention",
+      "reference": "thirdparty/KernelBench/KernelBench/level3/50_ReLUSelfAttention.py",
+      "reference_overrides": {
+        "rocm": "configs/kda-relu-original/reference.py"
+      }
+    }
+  ]
+}
