@@ -57,4 +57,4 @@ An arXiv identifier can be added after submission.
 
 TileCas code is released under the [MIT License](LICENSE). Bundled dependencies retain their own copyright notices and licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-For project questions, open a GitHub issue. Correspondence: Wei Yang, [wei.yang@utdallas.edu](mailto:wei.yang@utdallas.edu).
+For project questions, open a GitHub issue. Correspondence: Wei Yang, [yang_wei@fudan.edu.cn](mailto:yang_wei@fudan.edu.cn).
