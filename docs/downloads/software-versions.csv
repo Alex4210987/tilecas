@@ -1,0 +1,11 @@
+platform,component,version,record_basis
+Ascend 910B3,CANN,9.0.0,Version files and MLP run toolchain path
+Ascend 910B3,Ascend C,CANN 9.0.0 toolchain,CANN compiler and OPP version records
+Ascend 910B3,TileLang-Ascend source,0.1.4,Imported source inspection on 2026-10-05
+Ascend 910B3,TileLang-Ascend installed wheel,0.1.4+ubuntu.20.4.cann900,Installed wheel metadata; source selected through PYTHONPATH
+AMD Radeon AI PRO R9700,ROCm SDK devel/core,7.14.1,Experiment deployment record
+AMD Radeon AI PRO R9700,HIP,7.14.60850-0000000,Experiment hipcc path inspected on 2026-10-05
+AMD Radeon AI PRO R9700,TileLang,0.1.14,Experiment deployment record and installed metadata
+AMD Radeon AI PRO R9700,PyTorch,2.14.0+rocm7.14,Historical deployment README and package metadata inspection 2026-10-06
+Ascend 910B3,PyTorch,2.7.1,Package metadata inspected 2026-10-06 in the historical environment path
+Ascend 910B3,torch_npu,2.7.1.post4,Package metadata inspected 2026-10-06 in the historical environment path

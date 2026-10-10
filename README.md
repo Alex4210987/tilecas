@@ -4,7 +4,9 @@
 
 TileCas enables coding agents to develop accelerator kernels across editable programming abstractions. It connects high-level TileLang search with native Ascend C or HIP C++ refinement, using cross-level diagnosis, abstraction scheduling, and a heterogeneous search tree to retain and revisit candidate implementations.
 
-**Authors:** Xinyu Xiao (Fudan University), Zihe Song (University of Texas at Dallas), Wei Yang (Fudan University), and Tao Xie (Peking University / Fudan University).
+**Authors:** Xinyu Xiao (Fudan University), Zihe Song (University of Texas at Dallas), Dezhi Ran (Peking University / Beijing Tongming Lake Information Technology Application Innovation Center), Wei Yang (Fudan University), and Tao Xie (Peking University / Fudan University).
+
+**[Project website](https://alex4210987.github.io/tilecas/) · [Paper](https://alex4210987.github.io/tilecas/downloads/TileCas.pdf) · [Results and materials](https://alex4210987.github.io/tilecas/#materials)**
 
 ## Source layout
 
@@ -47,11 +49,16 @@ The internal mode name `ours` selects TileCas; existing `kernelopt` module names
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). The manuscript title is:
+See [CITATION.cff](CITATION.cff), or use:
 
-> Xinyu Xiao, Zihe Song, Wei Yang, and Tao Xie. *TileCas: Cascading Kernel Development Across Programming Abstractions*.
-
-An arXiv identifier can be added after submission.
+```bibtex
+@misc{xiao2026tilecas,
+  title = {TileCas: Cascading Kernel Development Across Programming Abstractions},
+  author = {Xinyu Xiao and Zihe Song and Dezhi Ran and Wei Yang and Tao Xie},
+  year = {2026},
+  url = {https://alex4210987.github.io/tilecas/}
+}
+```
 
 ## License and contact
 

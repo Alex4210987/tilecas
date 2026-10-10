@@ -11,6 +11,10 @@ authors:
     given-names: Zihe
     affiliation: University of Texas at Dallas
     email: zihe.song@utdallas.edu
+  - family-names: Ran
+    given-names: Dezhi
+    affiliation: Peking University / Beijing Tongming Lake Information Technology Application Innovation Center
+    email: dezhiran@pku.edu.cn
   - family-names: Yang
     given-names: Wei
     affiliation: Fudan University
@@ -20,6 +24,7 @@ authors:
     affiliation: Peking University / Fudan University
     email: taoxie@pku.edu.cn
 repository-code: "https://github.com/Alex4210987/tilecas"
+url: "https://alex4210987.github.io/tilecas/"
 license: MIT
 keywords:
   - accelerator kernels

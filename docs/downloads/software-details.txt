@@ -1,0 +1,17 @@
+Software versions (inspection: 2026-10-05)
+
+Ascend 910B3
+CANN: 9.0.0.
+Ascend C: the CANN 9.0.0 toolchain. compiler/version.info and opp/version.info both report Version=9.0.0; no separate standalone Ascend C version was established.
+TileLang-Ascend: imported source module reports 0.1.4, loaded from /root/tilelang-ascend/tilelang/__init__.py.
+An installed wheel in the same environment reports 0.1.4+ubuntu.20.4.cann900. Wheel metadata is not an independent build identifier for a source module selected through PYTHONPATH.
+Historical connection: output for kb-ours-codex-astra-low-mlp-sync-20260926 references ascend-migration-20260918/usr/local/Ascend/cann-9.0.0. The migration env.sh selects that CANN tree and /root/tilelang-ascend.
+The system default /usr/local/Ascend/ascend-toolkit/latest is 8.0.RC3, which is not the toolchain path referenced by that MLP run.
+
+AMD Radeon AI PRO R9700
+ROCm SDK devel/core: 7.14.1.
+HIP: 7.14.60850-0000000, inspected on 2026-10-05 at the hipcc path referenced by the experiment env.sh.
+TileLang: 0.1.14.
+Historical connection: deployment/kernelopt/backends/rocm/README.md for kb-native-only-rocm-mingpt-astra-low-20261002-172255 records TileLang 0.1.14 and ROCm SDK devel 7.14.1; the later pip metadata agrees.
+
+Version records and dated package inspection are included in this directory.

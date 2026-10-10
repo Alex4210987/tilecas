@@ -1,0 +1,16 @@
+method,comparator,configuration,data_kind,source_relative_gain_pct,final_verify_relative_gain_pct,source_wins,source_ties,source_losses,final_verify_wins,final_verify_ties,final_verify_losses
+AKO+TileCas,Random,AMD / Astra,measured,22.507745580462934,23.20774817822744,44,1,5,44,1,5
+AKO+TileCas,Random,AMD / DeepSeek Flash,measured,38.93927967920556,38.90152693563569,36,2,12,35,1,14
+AKO+TileCas,Random,Ascend / Astra,measured,22.026666666666685,22.616368870238457,39,1,10,36,4,10
+AKO+TileCas,Random,Ascend / DeepSeek Flash,measured,41.58692464320934,41.43556372284494,39,1,10,37,3,10
+AKO+TileCas,Random,Overall,measured,29.040607852150792,29.41593844746908,158,5,37,152,9,39
+AKO+TileCas,AKO-Fixed,AMD / Astra,measured,32.977250247279954,33.667056421951,42,0,8,41,1,8
+AKO+TileCas,AKO-Fixed,AMD / DeepSeek Flash,measured,13.730569948186533,13.347396802029543,28,3,19,21,11,18
+AKO+TileCas,AKO-Fixed,Ascend / Astra,measured,53.45405767940976,53.602366632779486,43,0,7,42,3,5
+AKO+TileCas,AKO-Fixed,Ascend / DeepSeek Flash,measured,21.151330135194012,20.834226275239608,31,3,16,31,2,17
+AKO+TileCas,AKO-Fixed,Overall,measured,29.28752840529343,29.386063103048123,144,6,50,135,17,48
+KDA+TileCas,KDA,AMD / Astra,measured,106.61668839634939,106.7434930053536,50,0,0,50,0,0
+KDA+TileCas,KDA,AMD / DeepSeek Flash,measured,54.02571041948578,54.5050960933966,35,1,14,35,2,13
+KDA+TileCas,KDA,Ascend / Astra,measured,82.66776451214497,83.25904366895978,46,0,4,46,0,4
+KDA+TileCas,KDA,Ascend / DeepSeek Flash,measured,18.136522172396585,18.180991697565997,28,2,20,28,2,20
+KDA+TileCas,KDA,Overall,measured,69.21606118546843,69.5105469742961,159,3,38,159,4,37

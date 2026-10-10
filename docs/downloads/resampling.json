@@ -1,0 +1,24 @@
+{
+  "scope": "Paired workload-level resampling of endpoint scores",
+  "unit": "workload",
+  "workloads": 50,
+  "configurations_per_workload": 4,
+  "repeats_per_configuration": 5,
+  "draws": 20000,
+  "rng": "numpy.random.default_rng / PCG64",
+  "rng_seed": 2026100431,
+  "sampling": "Each draw samples 50 workload indices with replacement; identical indices used across methods",
+  "within_cluster": "Keep all four configurations and all five repeats together; no inner resampling of repeats",
+  "overall_statistic": "Arithmetic mean over sampled workload clusters, equally weighted configurations, and five repeats; failed endpoints score zero",
+  "per_configuration_statistic": "Same shared workload indices, using only the selected configuration and its five repeats",
+  "percentiles": [
+    2.5,
+    97.5
+  ],
+  "quantile_method": "numpy.quantile, method=linear",
+  "majority_correctness": "At least 3 of 5 correct repeats. Minority-correct groups still contribute positive speedups to endpoint means.",
+  "sd": "Sample SD of five aggregate repeat means; ddof=1",
+  "repeat_unit": "One seed-level endpoint record within a workload-configuration pair",
+  "uncertainty_unit": "Workload resampling conditional on the supplied endpoint records",
+  "confidence_level": 0.95
+}
